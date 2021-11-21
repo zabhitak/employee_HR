@@ -11,15 +11,33 @@
 
     <div style="color:rgb(15, 13, 1)">
         <form action="{{ url_for('predict')}}" method="post">
-            <h3>What is your current CGPA</h3><br><input id="first" name="a" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="second" name="b" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="third" name="c" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="fourth" name="d" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="fifth" name="e" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="sixth" name="f" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="seventh" name="g" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="eight" name="h" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
-            <h3>What is your current CGPA</h3><br><input id="nine" name="i" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>Enter your Satisfaction level</h3><br><input id="first" name="a" required="required" placeholder="On the level of 0-1">
+            <h3>Time since last evaluation in years</h3><br><input id="second" name="b" required="required" placeholder="Evaluated performance by the employer,ranges from 0-1">
+            <h3>Number of projects completed while at work</h3><br><input id="third" name="c" required="required" placeholder="Fill your projects count">
+            <h3>Average monthly hours at workplace</h3><br><input id="fourth" name="d" required="required" placeholder="Average numbers of hours worked ">
+            <h3>Time spent at the company in years</h3><br><input id="fifth" name="e" required="required" placeholder="employee experience the number of years spent">
+            <h3>Whether the employee had a workplace accident</h3><br><input id="sixth" name="f" required="required" placeholder="Has had a work accident or not">
+            <h3>Whether the employee was promoted in the last five years</h3><br><input id="seventh" name="g" required="required" placeholder="Has had a promotion eg 0 or 1">
+            <h3>Department in which they work for</h3>
+            <select name="h" id="eight" required="required" >
+                <option value="7">Sales</option>
+                <option value="2">Accounting</option>
+                <option value="3">HR</option>
+                <option value="9">Technical</option>
+                <option value="8">Support</option>
+                <option value="4">Management</option>
+                <option value="0">IT</option>
+                <option value="6">Product Manager</option>
+                <option value="5">Marketing</option>
+                <option value="1">Other</option>
+            </select>
+
+            <h3>Relative level of salary</h3><br>
+            <select name="i" id="nine" required="required" >
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="0">High</option>
+            </select>
   
             <br><br><button id="sub" type="submit ">Calculate the importance</button>
             <br>
