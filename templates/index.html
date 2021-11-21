@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Analytics</title>
+</head>
+
+<body style="background-image: url('https://therichrecruiter.com/wp-content/uploads/2018/04/cropped-FullSizeRender-3.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: fit;background-color: rgb(20, 2, 2);">
+
+    <div style="color:rgb(15, 13, 1)">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h3>What is your current CGPA</h3><br><input id="first" name="a" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="second" name="b" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="third" name="c" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="fourth" name="d" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="fifth" name="e" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="sixth" name="f" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="seventh" name="g" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="eight" name="h" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+            <h3>What is your current CGPA</h3><br><input id="nine" name="i" required="required" placeholder="Fill you CGPA out of 10 eg, 9.58">
+  
+            <br><br><button id="sub" type="submit ">Calculate the importance</button>
+            <br>
+
+        </form>
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 153px;
+            height: 33px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        
+        #fuel:hover {
+            background-color: rgba(241, 242, 243, 0.788);
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        
+        #sub {
+            width: 180px;
+            height: 83px;
+            text-align: center;
+            border-radius: 14px;
+            margin-top: 25px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: rgb(247, 201, 0);
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            width: 295px;
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            width: 295px;
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
